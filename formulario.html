@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+    <div class="contenedor-barra">
+        <h1>Materia Prima</h1>
+    </div>
+    <div class="bg-amarillo contenedor sombra">
+        <form id="materia" action="#">
+            <Legend>Ingrese el producto <span>Todos los campos son obligatorios</span> </Legend>
+            <div class="campos">
+                <div class="campo">
+                    <label for="nombre">Ingrediente:</label>
+                    <input type="text" placeholder="Ingrese la materia" id="nombre">
+                </div>
+                <div class="campo">
+                    <label for="opciones">Unidad:</label>
+                    <select name="" id="opciones">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="KG">KG</option>
+                        <option value="Litro">Litro</option>
+                        <option value="Pieza">Pieza</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad">
+                </div>
+                <div class="campo">
+                    <label for="costo">Costo:</label>
+                    <input type="number" id="costo">
+                </div>
+                <div class="campo">
+                    <label for="total">Total:</label>
+                    <input type="text"id="total">
+                </div>
+               
+            </div>
+            <div class="campo enviar">
+                <input type="submit" value="Añadir">
+            </div>
+        </form>
+   
+   </div>
+   <script type="text/javascript" src="javascript/form.js"></script>
+</body>
+
+</html>
