@@ -18,6 +18,7 @@ function leerFormulario(e){
     }else{
         console.log("llenos");
         cantidades();
+        newRowTable();
     }
 }
 
@@ -43,4 +44,28 @@ function cantidades(){
     var b = parseInt(document.getElementById('cantidad').value);
      var t = a*b;
     document.getElementById("total").value = t;
+}
+
+function newRowTable(){
+    var ingre = document.getElementById("nombre").value;
+    var uni = document.getElementById("opciones").value;
+    var cant = document.getElementById("cantidad").value;
+    var cos = document.getElementById("costo").value;
+    var total = document.getElementById("total").value;
+
+    var table = document.getElementById("listado-costos");
+
+    var row = table.insertRow(0+1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    var cell5 = row.insertCell(4);
+
+    cell1.innerHTML = ingre;
+    cell2.innerHTML = uni;
+    cell3.innerHTML = cant;
+    cell4.innerHTML = cos;
+    cell5.innerHTML = total;
+
 }
