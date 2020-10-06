@@ -13,12 +13,13 @@ function leerFormulario(e){
     cantidad = document.querySelector('#cantidad').value,
     costo = document.querySelector('#costo').value,
     total = document.querySelector('#total').value;
-    if(nombre === '' || opciones === '' || cantidad === '' || costo === ''){
+    if(nombre === '' || opciones === '' || cantidad === '' || costo === '' || cantidad < 0  || costo < 0){
         mostraralerta("Todos los campos son obligatorios", 'error');
     }else{
         console.log("llenos");
         cantidades();
         newRowTable();
+        calcularsumaTotales()
     }
 }
 
@@ -66,6 +67,17 @@ function newRowTable(){
     cell2.innerHTML = uni;
     cell3.innerHTML = cant;
     cell4.innerHTML = cos;
-    cell5.innerHTML = total;
-
+    cell5.innerHTML = '<p name="total_p[]">'+total+'</p>';
+    
 }
+
+function calcularsumaTotales(){
+    var totales_n=0;
+    var array_totales = document.getElementsByName("total_p[]");
+    for(var i=0;i<array_totales.length;i++){
+        totales_n+=parseFloat(array_totales[i].innerHTML);
+    }
+    document.getElementById("Totales").value = totales_n;
+}
+
+

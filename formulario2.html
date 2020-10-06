@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+    <div class="contenedor-barra">
+        <div class="barra">
+            <nav class="navegacion">
+                <a href="formulario.html">Materia Prima</a>
+            </nav>
+        </div>
+        <h1>Costos Fijos</h1>
+    </div>
+    <div class="bg-amarillo contenedor sombra">
+        <form id="fijos" action="#">
+            <Legend>Ingrese el producto <span>Todos los campos son obligatorios</span> </Legend>
+            <div class="campos">
+                <div class="campo">
+                    <label for="servicios">Servicio:</label>
+                    <select name="" id="servicios">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="Luz">Luz</option>
+                        <option value="Agua">Agua</option>
+                        <option value="Alquiler">Alquiler</option>
+                        <option value="Gas">Gas</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="costof">Costo:</label>
+                    <input type="number" id="costof">
+                </div>
+                <div class="campo">
+                    <label for="total">Total:</label>
+                    <input type="text"id="totalf">
+                </div>
+               
+            </div>
+            <div class="campo enviar">
+                <input type="submit" value="Añadir" id="btn2">
+            </div>
+        </form>
+   
+   </div>
+    <div class="bg-azul contenedor sombra registros">
+        <div class="contenedor-materias">
+            <h2>Costos</h2>
+            <div class="contenedor-tabla">
+                <table id="listado-fijos" class="listado-fijos">
+                    <thead>
+                        <tr> 
+                            <th>Servicio</th>
+                            <th>Costo</th>
+                            <th>Total</th>
+                        </tr>
+
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <label for="T">Total:</label>
+                <input type="text" name="" id="Totales">
+            </div>
+        </div>
+    </div>
+   <script type="text/javascript" src="javascript/form2.js"></script>
+</body>
+
+</html>

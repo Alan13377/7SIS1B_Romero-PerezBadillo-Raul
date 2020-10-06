@@ -142,6 +142,32 @@ legend span{
     border-collapse: collapse;
 }
 
+.listado-fijos{
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+
+}
+table td{
+    border: 1px solid;
+    text-align: center;
+}
 .listado-costos thead{
     background-color: red;
+}
+
+.listado-fijos thead{
+    background-color: red;
+}
+
+.barra{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
 }
