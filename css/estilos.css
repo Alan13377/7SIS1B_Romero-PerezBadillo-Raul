@@ -18,9 +18,7 @@ body{
     background-color: #ffc107;
 }
 
-.bg-azul{
-    background-color: royalblue;
-}
+
 
 .sombra{
     -webkit-box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
@@ -146,18 +144,18 @@ legend span{
     width: 100%;
     margin-top: 1rem;
     border-collapse: collapse;
-
+    
 }
 table td{
-    border: 1px solid;
+    border: 2px cornflowerblue solid;
     text-align: center;
 }
 .listado-costos thead{
-    background-color: red;
+    background-color: royalblue;
 }
 
 .listado-fijos thead{
-    background-color: red;
+    background-color: royalblue;
 }
 
 .barra{
@@ -170,4 +168,15 @@ table td{
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
+}
+
+.totales{
+    display: flex;
+    justify-content: flex-end;
+    width: 101%;
+    border: none;
+    padding: .5rem;
+    height: 3rem;
+    margin-top: .5rem;
+    font-size: 2rem;
 }
